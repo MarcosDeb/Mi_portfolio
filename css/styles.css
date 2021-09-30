@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* *****Header***** */
+
+.header{
+    background-color: rgb(90, 92, 94);
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+.logo{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 100px;
+    color: white;
+    text-decoration: none;
+    cursor: default;
+}
+.nav_menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+.nav_list{
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 0 10px;
+    line-height: 100px;
+    width: max-content;
+}
+.nav_link{
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s;
+}
+.nav_link:hover, .nav_link_active{
+    font-size: 28px;
+    font-weight: bolder;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+.nav_toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+/* *****About***** */
+
+.about{
+    background: #494949;
+    width: 100%;
+    height: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.description{
+    background: none;
+    font-size: 32px;
+    color: #fff;
+    width: 100%;
+    height: 80%;
+    line-height: 1.4;
+    padding: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+/* *****Skills***** */
+.skills{
+    background: whitesmoke;
+    margin: 0;
+    font-family: sans-serif;
+    cursor: default;
+    padding-bottom: 100px;
+}
+.title_skills, .title_contact{
+    font-family: 'Merriweather', serif;
+    font-size: 80px;
+    font-weight: 900;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: rgb(27, 26, 26);
+    text-align: center;
+    cursor: default;
+}
+.skills_gallery, .contact_list{
+    width: 100%;
+    background-color: none;
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skills_gallery li{
+    margin: 50px;
+}
+.skills_gallery img{
+    width: 200px;
+    height: 200px;
+    color: white;
+    cursor: default;
+}
+
+/* *****Contact***** */
+
+.contact{
+    background-color: rgb(211, 206, 206);
+    padding-bottom: 70px;
+}
+.contact_list li{
+    margin: 40px;
+    padding-bottom: 65px;
+}
+.contact_list img{
+    width: 200px;
+    height: 200px;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.contact_list img:hover{
+    width: 225px;
+    height: 225px;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+/* *****Footer***** */
+
+.footer{
+    width: 100%;
+    height: 300px;
+    padding-top: 40px;
+    background-color: black;
+    text-align: center;
+}
+.firm_name{
+    color: white;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 40px;
+}
+.firm{
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 32px;
+}
+.last_firm{
+    color: white;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}

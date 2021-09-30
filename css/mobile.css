@@ -1,0 +1,47 @@
+@media(max-width: 768px){
+    .header{
+        padding-top: 0px;
+        height: 60px;
+    }
+    .logo{
+        font-family: 'Ubuntu', sans-serif;
+        color: white;
+        text-decoration: none;
+        font-size: 26px;
+        line-height: 60px;
+    }
+    .nav_menu{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: rgb(167, 170, 173);
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .nav_list{
+        line-height: 70px;
+    }
+    .nav_link:hover{
+        background: none;
+        color: white;
+        font-size: 36px;
+    }   
+    .nav_toggle{
+        display: block;
+    }
+    .nav_menu_visible{
+        left: 0;
+    }
+    .nav_toggle:focus:not(:focus-visible){
+        outline: none;
+    }
+    .description{
+        font-size: 22px;
+    }
+}
